@@ -1,0 +1,18 @@
+{
+    "target_overrides": {
+        "*": {
+            "platform.stdio-baud-rate"              : 115200,
+            "platform.stdio-convert-newlines"       : true,
+            "platform.heap-stats-enabled"           : 1,
+            "lwip.socket-max"                       : 8,
+            "lwip.tcp-socket-max"                   : 8,
+            "lwip.tcp-server-max"                   : 8
+        },
+        "NUMAKER_IOT_M487": {
+            "target.network-default-interface-type" : "ETHERNET"
+        },
+        "NUMAKER_IOT_M467": {
+            "target.network-default-interface-type" : "ETHERNET"
+        }
+    }
+}
